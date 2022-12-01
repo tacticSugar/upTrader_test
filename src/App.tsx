@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.scss'
 
 import Project from './components/Project/Project'

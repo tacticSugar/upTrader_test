@@ -7,27 +7,72 @@ function Project() {
       id: 1,
       title: 'Queue',
       items: [
-        { id: 1, title: 'Написать тестовое задание' },
-        { id: 2, title: 'Устроиться на работу' },
-        { id: 3, title: 'Поесть' },
+        {
+          id: 1,
+          title: 'Написать тестовое задание',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
+        {
+          id: 2,
+          title: 'Устроиться на работу',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
+        {
+          id: 3,
+          title: 'Поесть',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
       ],
     },
     {
       id: 2,
       title: 'Development',
       items: [
-        { id: 4, title: 'Не сдаваться' },
-        { id: 5, title: 'Поприседать' },
-        { id: 6, title: 'Вынести мусор' },
+        {
+          id: 4,
+          title: 'Не сдаваться',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
+        {
+          id: 5,
+          title: 'Поприседать',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
+        {
+          id: 6,
+          title: 'Вынести мусор',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
       ],
     },
     {
       id: 3,
       title: 'Done',
       items: [
-        { id: 7, title: 'Закончить свой сайт' },
-        { id: 8, title: 'Посмотреть уроки' },
-        { id: 9, title: 'Учиться' },
+        {
+          id: 7,
+          title: 'Закончить свой сайт',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
+        {
+          id: 8,
+          title: 'Посмотреть уроки',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
+        {
+          id: 9,
+          title: 'Учиться',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugiat repellat architecto consequatur esse hic ratione placeat',
+        },
       ],
     },
   ])
@@ -117,7 +162,10 @@ function Project() {
               className="item"
               draggable={true}
             >
-              {item.title}
+              <h1 className="item__title">{`${
+                item.id + '. ' + item.title
+              }`}</h1>
+              <p className="item__description">{item.description}</p>
             </div>
           ))}
         </div>
