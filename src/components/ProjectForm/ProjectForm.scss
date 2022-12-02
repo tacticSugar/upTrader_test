@@ -1,0 +1,17 @@
+.projectFormContainer {
+  margin-bottom: 30px;
+
+  & form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & input {
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-right: 15px;
+  }
+}
